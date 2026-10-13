@@ -1,0 +1,28 @@
+{
+  "name": "maqhaa-ad",
+  "version": "1.0.0",
+  "description": "Motion graphics promotional ad for Maqhaa POS using Remotion",
+  "scripts": {
+    "start": "remotion preview src/index.ts",
+    "dev": "remotion preview src/index.ts",
+    "preview": "remotion preview src/index.ts",
+    "build": "remotion render src/index.ts MaqhaaAd out/maqhaa-ad.mp4 --overwrite",
+    "render": "remotion render src/index.ts MaqhaaAd out/maqhaa-ad-vertical.mp4 --overwrite",
+    "render:vertical": "remotion render src/index.ts MaqhaaAd out/maqhaa-ad-vertical.mp4 --overwrite",
+    "render:horizontal": "remotion render src/index.ts MaqhaaAdHorizontal out/maqhaa-ad-horizontal.mp4 --overwrite",
+    "vo:elevenlabs": "python scripts/generate_elevenlabs_vo.py",
+    "vo:voices": "python scripts/list_elevenlabs_voices.py"
+  },
+  "dependencies": {
+    "@fontsource/cairo": "^5.2.7",
+    "@fontsource/tajawal": "^5.3.0",
+    "lucide-react": "^1.53.0",
+    "react": "^19.2.3",
+    "react-dom": "^19.2.3",
+    "remotion": "^4.0.534"
+  },
+  "devDependencies": {
+    "@remotion/cli": "^4.0.534",
+    "typescript": "^5.9.3"
+  }
+}
